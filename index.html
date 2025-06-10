@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="favicon.png" href="favicon.png">
+    <title>MDAL Hamburgueria</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.jfif" alt="Logo Hamburgueria" />
+        <h1>MDAL Hamburgueria</h1>
+      </div>
+      <nav>
+        <ul>
+          <div class="tabs">
+            <button class="tab-button" data-tab="hamburgueres">
+              Hambúrgueres
+            </button>
+            <button class="tab-button" data-tab="Trios">Trios</button>
+            <button class="tab-button" data-tab="combos">Combos</button>
+            <button class="tab-button" data-tab="porcoes">Porções</button>
+            <button class="tab-button" data-tab="bebidas">Bebidas</button>
+          </div>
+        </ul>
+      </nav>
+      <div class="cart-icon" id="cartButton">
+        🛒 <span id="cartCount">0</span> 
+      </div>
+    </header>
+
+    <main>
+<section class="tab-content active" id="hamburgueres">
+  <div class="produtos">
+    <h2 class="categoria-titulo">🍔 Hambúrgueres</h2>
+
+    <!-- Cards aqui -->
+        <div class="card">
+          <img
+            src="cheeseburg.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>CheesseBurg</h3>
+          <p>Pão brioche, Burg 130g, Cheddar.</p>
+          <span>R$ 18,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Alice.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Alice</h3>
+          <p>Pão brioche, Burg 130g, Queijo Mussarela, Bacon & Maionese.</p>
+          <span>R$ 24,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="CHUWRRASCO.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Chuwrrasco</h3>
+          <p>Pão brioche, Burg 130g, Cheddar, Vinagrete, Farofa & Maionese.</p>
+          <span>R$ 24,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="CHUW SALAD.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Chuw Salad</h3>
+          <p>
+            Pão brioche, Burg 130g, Cheddar, Alface, Tomate, Farofa & Maionese.
+          </p>
+          <span>R$ 24,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="classic.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Classic M</h3>
+          <p>
+            Pão brioche, Burg 130g, Queijo Cheddar, Bacon, Cebolas Roxas,
+            Mostarda temperada.
+          </p>
+          <span>R$ 27,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Samurai MDAL.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Samurai MDAL</h3>
+          <p>
+            Pão brioche, Burg 130g, Queijo Cheddar, Bacon, Cebola Caramelizadas,
+            Molho Barbecue.
+          </p>
+          <span>R$ 28,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Analista MDAL.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Analista MDAL</h3>
+          <p>
+            Pão brioche, Burg 130g, Queijo Mussarela, Alface, Tomate, Cebolas
+            Caramelizadas & Molho Barbecue.
+          </p>
+          <span>R$ 28,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Alistar Velho Oeste.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Velho Oeste - Alistar</h3>
+          <p>
+            Pão brioche, Burg 130g, Queijo Cheddar, Alface, Tomate, ONION RINGS
+            & Mostarda Temperada.
+          </p>
+          <span>R$ 30,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Samira.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Velho Oester - Samira</h3>
+          <p>
+            Pão brioche, Burg 130g, Cheddar, Bacon, ONION RINGS & Mostarda
+            Temperada.
+          </p>
+          <span>R$ 30,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Double Cheese.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Double Cheese</h3>
+          <p>
+            Pão brioche, Double Burg 130g, Double Cheddar, Alface, Tomate,
+            Cebolas Caramelizadas.
+          </p>
+          <span>R$ 36,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Double M.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>DOUBLE M</h3>
+          <p>
+            Pão brioche, Double Burg 130g, Double Cheddar, Double Bacon, Cebolas
+            Roxas & Mostarda Temperada.
+          </p>
+          <span>R$ 42,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Kaminari Supremacia.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Kaminari Supremacia</h3>
+          <p>
+            Pão brioche, Double Burg 130g, Double Cheddar, Bacon, Alface,
+            Tomate, Cebolas Caramelizadas & Maionese.
+          </p>
+          <span>R$ 42,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="KAMINARI 3.0.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Kaminari 3.0</h3>
+          <p>Pão brioche, TRIPLE Burg 130g, TRIPLE Cheddar, Alface & Tomate.</p>
+          <span>R$ 44,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="The Goat.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>THE GOAT</h3>
+          <p>
+            Pão brioche, Double Burg 130g, Double Cheddar, Double Bacon, Alface,
+            Tomate, Cebolas Caramelizadas, Molho Barbecue & Mostarda Temperada.
+          </p>
+          <span>R$ 47,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+      </section>
+
+<section class="tab-content" id="Trios">
+  <div class="produtos">
+    <h2 class="categoria-titulo">🥪 Trios</h2>
+    <!-- Cards de trios aqui -->
+  <div class="card">
+  <img src="Make The M.jfif" alt="Hambúrguer Clássico" class="product-img"/>
+          <h3>Make The M</h3>
+          <p>1 Classic M, 1 Batata, 1 CocaCola 310ml</p>
+          <p>
+            Pão brioche, Burg 130g, Queijo Cheddar, Bacon, Cebolas Roxas,
+            Mostarda Temperada.
+          </p>
+          <span>R$ 39,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="TRIO Analista MDAL.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Trio Analista MDAL</h3>
+          <p>1 Analista MDAL, 1 Batata, 1 CocaCola 310ml</p>
+          <p>
+            Pão brioche, Burg 130g, Queijo Mussarela, Alface, Tomate, Cebolas
+            Caramelizadas & Molho Barbecue.
+          </p>
+          <span>R$ 40,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="TRIO Samurai MDAL.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Trio Samurai MDAL</h3>
+          <p>1 Samurai MDAL, 1 Batata, 1 CocaCola 310ml</p>
+          <p>
+            Pão brioche, Burg 130g, Queijo Cheddar, Bacon, Cebolas
+            Caramelizadas, Molho Barbecue.
+          </p>
+          <span>R$ 40,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Monster M.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Monster M</h3>
+          <p>1 Classic M, 1 Batata, 1 Monster</p>
+          <p>
+            Pão brioche, Burg 130g, Queijo Cheddar, Bacon, Cebolas Roxas
+            Mostarda Temperada.
+          </p>
+          <span>R$ 45,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Relaxa Não.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Relaxa Não</h3>
+          <p>1 Double M, 1 Batata, 1 CocaCola 310ml</p>
+          <p>
+            Pão brioche, Double Burg 130g, Double Cheddar, Double Bacon, Cebolas
+            Roxas & Mostarda Temperada.
+          </p>
+          <span>R$ 52,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="FAKER.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>F A K E R</h3>
+          <p>1 THE GOAT ; 1 Batata ; 1 CocaCola 310ml</p>
+          <p>
+            Pão brioche, Double Burg 130g, Double Cheddar, Double Bacon, Alface,
+            Tomate, Cebolas Caramelizadas, Molho Barbecue & Mostarda Temperada.
+          </p>
+          <span>R$ 59,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+      </section>
+
+<section class="tab-content" id="combos">
+  <div class="produtos">
+    <h2 class="categoria-titulo">🍟 Combos</h2>
+    <!-- Cards de combos aqui -->
+        <div class="card">
+          <img
+            src="chuw MDAL.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Monster M</h3>
+          <p>1 Chuw Salad, 1 Chuwrrasco e 1 CocaCola 2L</p>
+          <p>
+            Pão brioche, Burg 130g, Cheddar, Alface, Tomate, Farofa & Maionese.
+          </p>
+          <p>Pão brioche, Burg 130g, Cheddar, Vinagrete, Farofa & Maionese.</p>
+          <span>R$ 55,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="TA MASUKADO.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Ta Masukado!!</h3>
+          <p>2 Classic M, 1 Batata, 1 CocaCola 2L</p>
+          <p>
+            Pão brioche, Burg 130g, Queijo Cheddar, Bacon, Cebolas Roxas,
+            Mostarda Temperada.
+          </p>
+          <span>R$ 71,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="Santoryu Samurai.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Santoryu Samurai</h3>
+          <p>3 Samurai MDAL</p>
+          <p>
+            Pão brioche, Burg 130g, Queijo Cheddar, Bacon, Cebola Caramelizadas,
+            Molho Barbecue.
+          </p>
+          <span>R$ 78,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="CASAL MDAL.jfif"
+            alt="Hambúrguer Clássico"
+            class="product-img"
+          />
+          <h3>Casal MDAL</h3>
+          <p>1 Alice, 1 Double M, 1 CocaCola 2L e 1 Batata</p>
+          <p>Pão brioche, Burg 130g, Queijo Mussarela, Bacon & Maionese.</p>
+          <p>
+            Pão brioche, Double Burg 130g, Double Cheddar, Double Bacon, Cebolas
+            Roxas & Mostarda Temperada.
+          </p>
+          <span>R$ 81,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+      </section>
+
+<section class="tab-content" id="porcoes">
+  <div class="produtos">
+    <h2 class="categoria-titulo">🍗 Porções</h2>
+    <!-- Cards de porções aqui -->
+        <div class="card">
+          <img
+            src="batata.jfif"
+            alt="Batata"
+            class="product-img"
+          />
+          <h3>Batata</h3>
+          <p>180g de batata frita</p>
+          <span>R$ 9,99</span>
+          <button class="add-cart">Adicionar</button>
+        </div>
+      </section>
+
+<section class="tab-content" id="bebidas">
+  <div class="produtos">
+    <h2 class="categoria-titulo">🥤 Bebidas</h2>
+    <!-- Cards de bebidas aqui -->
+          <div class="card">
+            <img src="coca310.jpeg" class="product-img" />
+            <h3>Coca Lata 310ml</h3>
+            <span>R$ 5,99</span>
+            <button class="add-cart">Adicionar</button>
+          </div>
+
+          <div class="card">
+            <img src="coca-zero.webp" class="product-img" />
+            <h3>Coca Zero Lata 310ml</h3>
+            <span>R$ 5,99</span>
+            <button class="add-cart">Adicionar</button>
+          </div>
+
+          <div class="card">
+            <img src="coca2l.jfif" class="product-img" />
+            <h3>CocaCola 2L</h3>
+            <span>R$ 12,99</span>
+            <button class="add-cart">Adicionar</button>
+          </div>
+
+          <div class="card">
+            <img src="Monsterzero.png" class="product-img" />
+            <h3>Monter Zero</h3>
+            <span>R$ 12,99</span>
+            <button class="add-cart">Adicionar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+<!-- Modal para visualização da imagem -->
+<div id="modal" class="modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modalImage" />
+</div>
+
+<!-- Carrinho -->
+<div id="cart" class="cart">
+  <h2>Seu Carrinho</h2>
+  <ul id="cartItems"></ul>
+  <p id="cartTotal">Total: R$ 0,00</p>
+  <a id="whatsappLink" href="#" target="_blank">Finalizar pelo WhatsApp</a>
+  <button id="closeCart">Fechar</button>
+</div>
+
+  </body>
+</html>
